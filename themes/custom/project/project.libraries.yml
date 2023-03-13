@@ -1,0 +1,9 @@
+project-styling:
+  version: 1.x
+  css:
+    theme:
+      project/stylesheets/project.css: {}
+  js:
+    js/project.js: {weight: 0}
+  dependencies:
+    - core/jquery

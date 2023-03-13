@@ -1,0 +1,9 @@
+name: Project
+type: theme
+base theme: claro
+description: 'A clean, accessible, and flexible Drupal front-end theme.'
+alt text: 'Screenshot of Olivero, Drupal front-end theme.'
+package: Custom
+core_version_requirement: ^8 || ^9
+libraries:
+  - project/project-styling

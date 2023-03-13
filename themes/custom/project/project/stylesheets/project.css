@@ -1,0 +1,332 @@
+/* line 4, ../sass/project.scss */
+.page-wrapper *:focus, .ui-dialog *:focus {
+  outline: none;
+  box-shadow: inherit;
+}
+
+/* line 10, ../sass/project.scss */
+.view-conferences .view-header {
+  text-align: center;
+  padding-bottom: 100px;
+}
+/* line 14, ../sass/project.scss */
+.view-conferences .view-header h1 {
+  font-weight: 500;
+}
+/* line 17, ../sass/project.scss */
+.view-conferences .view-header h4 {
+  font-weight: normal;
+}
+/* line 21, ../sass/project.scss */
+.view-conferences .view-content {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+/* line 26, ../sass/project.scss */
+.view-conferences .view-content .view-grouping {
+  width: 100%;
+}
+/* line 29, ../sass/project.scss */
+.view-conferences .view-content .view-grouping h2 {
+  font-weight: 600;
+  border-bottom: 2px solid #3092cf;
+  color: #3092cf;
+  width: 100%;
+  text-align: center;
+  height: 65px;
+}
+@media screen and (max-width: 850px) {
+  /* line 29, ../sass/project.scss */
+  .view-conferences .view-content .view-grouping h2 {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 0 25%;
+  }
+}
+/* line 43, ../sass/project.scss */
+.view-conferences .view-content .view-grouping h2.active {
+  position: relative;
+  height: 62px;
+  cursor: pointer;
+  transform: scale(1.1);
+  color: #404550;
+  font-size: 1.7rem;
+}
+@media screen and (max-width: 850px) {
+  /* line 43, ../sass/project.scss */
+  .view-conferences .view-content .view-grouping h2.active {
+    font-size: 1.3rem;
+  }
+}
+/* line 53, ../sass/project.scss */
+.view-conferences .view-content .view-grouping h2.active::after {
+  background-image: url(../../img/arrow.jpg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  display: block;
+  content: ' ';
+  left: 50%;
+  top: 98%;
+}
+/* line 65, ../sass/project.scss */
+.view-conferences .view-content .view-grouping h2:hover {
+  cursor: pointer;
+  color: #2377ab;
+  background-color: #f9f5f5;
+}
+/* line 71, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  padding: 0 50px 50px;
+}
+/* line 78, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view.tab-toggle {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+/* line 84, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide {
+  margin: 0 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s;
+  border-radius: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+/* line 92, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-field-cf-image {
+  height: 245px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+@media screen and (max-width: 850px) {
+  /* line 92, ../sass/project.scss */
+  .view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-field-cf-image {
+    height: 100px;
+  }
+}
+/* line 100, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-field-cf-image .field-content {
+  background-image: url(../../img/no-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 850px) {
+  /* line 100, ../sass/project.scss */
+  .view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-field-cf-image .field-content {
+    background-size: contain;
+  }
+}
+/* line 110, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-field-cf-image img {
+  width: 100%;
+  display: block;
+}
+/* line 115, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 15px;
+  color: #404550;
+  padding: 15px 10px 5px 5px;
+}
+@media screen and (max-width: 850px) {
+  /* line 115, ../sass/project.scss */
+  .view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-title {
+    font-size: 0.9rem;
+  }
+}
+/* line 125, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-field-conference-tags {
+  background-image: url(../../img/tags.jpg);
+}
+/* line 128, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-field-conference-date {
+  background-image: url(../../img/date.jpg);
+}
+/* line 131, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-field-address {
+  background-image: url(../../img/location.jpg);
+}
+/* line 134, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-field-conference-tags,
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-field-conference-date,
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-field-address {
+  color: #7C8993;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  padding: 5px 0px 5px 35px;
+  background-position-y: 10px;
+  margin-left: 15px;
+}
+@media screen and (max-width: 850px) {
+  /* line 134, ../sass/project.scss */
+  .view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-field-conference-tags,
+  .view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-field-conference-date,
+  .view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-field-address {
+    font-size: 0.8rem;
+  }
+}
+/* line 147, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-field-address {
+  padding-bottom: 15px;
+}
+/* line 150, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: none;
+}
+/* line 154, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .like {
+  background-image: url(../../img/like.jpg);
+}
+/* line 156, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .like:hover {
+  background-image: url(../../img/like-blue.jpg);
+}
+/* line 160, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .download {
+  background-image: url(../../img/download.jpg);
+}
+/* line 162, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .download:hover {
+  background-image: url(../../img/download-blue.jpg);
+}
+/* line 166, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .share {
+  background-image: url(../../img/share.jpg);
+}
+/* line 168, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .share:hover {
+  background-image: url(../../img/share-blue.jpg);
+}
+/* line 172, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .like,
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .download,
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .share {
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 20%;
+  height: 45px;
+}
+@media screen and (max-width: 850px) {
+  /* line 172, ../sass/project.scss */
+  .view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .like,
+  .view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .download,
+  .view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .share {
+    background-size: 20px;
+  }
+}
+/* line 186, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .like span,
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .download span,
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .share span {
+  visibility: hidden;
+}
+/* line 190, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .more {
+  display: inline-block;
+  margin: 10px 2% 10px 2%;
+  float: right;
+  font-size: 1.1vw;
+  width: 27%;
+}
+@media screen and (max-width: 850px) {
+  /* line 190, ../sass/project.scss */
+  .view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .more {
+    width: 25%;
+    height: 40px;
+    padding: 6px 0px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #2377ab;
+  }
+}
+/* line 205, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .more a {
+  text-align: center;
+  text-decoration: none;
+  color: #3092cf;
+}
+/* line 209, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick__slide .views-field-nothing .more a:hover {
+  font-weight: 500;
+  color: #2377ab;
+}
+/* line 217, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view.active {
+  visibility: visible;
+  opacity: 100;
+  height: auto;
+}
+/* line 223, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view.active .slick__slide:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* line 225, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view.active .slick__slide:hover .views-field-field-cf-image {
+  height: 200px;
+}
+@media screen and (max-width: 850px) {
+  /* line 225, ../sass/project.scss */
+  .view-conferences .view-content .view-grouping .slick--view.active .slick__slide:hover .views-field-field-cf-image {
+    height: 100px;
+  }
+}
+/* line 231, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view.active .slick__slide:hover .views-field-title {
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 850px) {
+  /* line 231, ../sass/project.scss */
+  .view-conferences .view-content .view-grouping .slick--view.active .slick__slide:hover .views-field-title {
+    font-size: 0.9rem;
+  }
+}
+/* line 237, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view.active .slick__slide:hover .views-field-nothing {
+  display: block;
+}
+/* line 243, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick-arrow {
+  width: 30px;
+}
+/* line 247, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick-prev::before {
+  background-image: url(../../img/left-arrow-gray.jpg);
+  background-repeat: no-repeat;
+  width: 66px;
+  height: 32px;
+  display: block;
+  color: inherit;
+}
+/* line 256, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick-prev:hover::before, .view-conferences .view-content .view-grouping .slick--view .slick-prev:focus::before {
+  background-image: url(../../img/left-arrow-blue.jpg);
+}
+/* line 262, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick-next::before {
+  background-image: url(../../img/right-arrow-gray.jpg);
+  background-repeat: no-repeat;
+  width: 66px;
+  height: 32px;
+  display: block;
+  color: inherit;
+}
+/* line 271, ../sass/project.scss */
+.view-conferences .view-content .view-grouping .slick--view .slick-next:hover::before, .view-conferences .view-content .view-grouping .slick--view .slick-next:focus::before {
+  background-image: url(../../img/right-arrow-blue.jpg);
+}
