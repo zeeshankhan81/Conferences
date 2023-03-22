@@ -26,9 +26,10 @@
  * @ingroup themeable
  */
 #}
+{{ attach_library('project/projectslick') }}
 {%
   set classes = [
-    'views-view-grid',
+    'views-view-grid responsive slider',
     options.alignment,
     'cols-' ~ options.columns,
     'clearfix',

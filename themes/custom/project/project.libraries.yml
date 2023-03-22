@@ -7,3 +7,13 @@ project-styling:
     js/project.js: {weight: 0}
   dependencies:
     - core/jquery
+projectslick:
+  version: 1.x
+  css:
+    theme:
+      slick/slick/slick.css: {}
+      slick/slick/slick-theme.css: {}
+  js:
+    slick/slick/jquery-2.2.0.min.js: {minified: true}
+    slick/slick/slick.js: {}
+    slick/slick/slick-inline.js: {}
